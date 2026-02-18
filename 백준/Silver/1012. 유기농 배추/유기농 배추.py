@@ -21,7 +21,7 @@ for i in range(T):
         matrix[x][y] = 0
 
         while queue:
-            x, y = queue.pop()
+            x, y = queue.pop(0)
 
             if x - 1 >= 0 and matrix[x - 1][y] == 1:
                 matrix[x - 1][y] = 0
